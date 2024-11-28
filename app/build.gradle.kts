@@ -58,6 +58,9 @@ dependencies {
     // Зависимость для WebSocket клиента
     implementation("org.java-websocket:Java-WebSocket:1.5.2")
 
+    // Зависимость для Guava (если нужна для устранения проблем с типами)
+    implementation("com.google.guava:guava:30.1-android")
+
     // Тестовые зависимости
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

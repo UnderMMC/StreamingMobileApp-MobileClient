@@ -2,15 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Разрешения для работы с камерой и интернетом -->
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-    <!-- Для работы с WebSocket -->
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -21,8 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StreamingMobileAppClient"
         tools:targetApi="31">
-
-        <!-- Main Activity -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -31,12 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <!-- Разрешение для использования камеры -->
-        <uses-feature android:name="android.hardware.camera" android:required="true" />
-
-        <!-- Если приложение поддерживает работу с фронтальной камерой (не обязательно) -->
-        <uses-feature android:name="android.hardware.camera.front" android:required="false" />
     </application>
 
 </manifest>
+
